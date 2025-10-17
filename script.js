@@ -12,6 +12,7 @@ async function setup() {
 }
 
 function showQuestion() {
+  console.log("Current question:", quiz[currentQuestion]); // Debug line
   const q = quiz[currentQuestion];
   document.getElementById("question-text").textContent = q.question;
   const list = document.getElementById("options-list");
